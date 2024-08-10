@@ -1,0 +1,96 @@
+.app-container {
+  @apply min-h-screen w-full bg-[#01022e] flex flex-col items-center justify-center p-4;
+}
+
+.app-title {
+  @apply text-2xl font-bold text-white mb-4;
+}
+
+.step-container {
+  @apply w-full max-w-md bg-white p-6 rounded-md;
+}
+
+.image-upload-container {
+  @apply grid gap-1;
+}
+
+.step-title {
+  @apply text-xl font-semibold text-black mb-4;
+}
+
+.input-group {
+  @apply flex flex-col items-start justify-center mb-5;
+}
+
+.input-label {
+  @apply block mb-2 text-black;
+}
+
+.select-input {
+  @apply w-full bg-white text-[#01022e] p-2 border border-gray-300 rounded-md;
+}
+
+.select-input:disabled {
+  @apply bg-gray-300 text-[#01022e];
+}
+
+.input-group-checkbox {
+  @apply grid items-center justify-center mb-5;
+}
+
+.checkbox-label {
+  @apply w-fit flex items-center justify-center text-black;
+}
+
+.checkbox-input {
+  @apply mr-2 accent-[#81a5f7];
+}
+
+.primary-button {
+  @apply w-full bg-[#81a5f7] text-white p-2 rounded-md transition-colors duration-300 cursor-pointer;
+}
+
+.primary-button:hover {
+  @apply bg-[#01022e];
+}
+
+.primary-button:disabled {
+  @apply bg-[#81a5f7] cursor-not-allowed;
+}
+
+.secondary-button {
+  @apply w-full mt-4 bg-gray-300 text-black p-2 rounded-md transition-colors duration-300 cursor-pointer;
+}
+
+.secondary-button:hover {
+  @apply bg-[#01022e] text-white;
+}
+
+.result-container {
+  @apply mt-6 h-fit w-fit bg-white p-6 rounded-md;
+}
+
+.result-title {
+  @apply font-bold text-black mb-5;
+}
+
+.result-pre {
+  @apply text-black;
+}
+
+.modal {
+  @apply fixed z-10 inset-0 flex justify-center items-center bg-black bg-opacity-40;
+}
+
+.modal-content {
+  @apply bg-white p-5 border border-gray-400 w-4/5 max-w-lg rounded-lg text-center;
+}
+
+.close-button {
+  @apply text-gray-400 float-right text-2xl font-bold cursor-pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  @apply text-black no-underline;
+}
